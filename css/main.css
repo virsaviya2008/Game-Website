@@ -21,8 +21,11 @@ img{
 }
 
 .container{
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 header{
     padding: 50px 0;
@@ -1099,4 +1102,382 @@ footer > p{
 }
 .feedback form button:hover{
     background: #8b4902;
+}
+@media (max-width: 1400px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .hero img {
+        max-width: 50%;
+    }
+
+    .trending .games {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 992px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero-info {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .hero-info h1 {
+        font-size: 36px;
+    }
+
+    .hero img {
+        position: static;
+        display: block;
+        margin: 30px auto 0;
+        max-width: 80%;
+    }
+
+    .big-text {
+        width: 100%;
+        font-size: 26px;
+    }
+
+    .banner p,
+    .email .block p {
+        width: 100%;
+    }
+
+    .features .info .block {
+        width: 45%;
+    }
+
+    .projects .images {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .projects .images img {
+        max-width: 48%;
+    }
+
+    .email .block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .email .block input {
+        width: 100%;
+        right: 0;
+        padding-right: 30px;
+    }
+
+    .email .block button {
+        right: 0;
+    }
+
+    /* страница About */
+    .hero-about {
+        padding-bottom: 100px;
+    }
+
+    .hero-about .info {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .hero-about img {
+        position: static;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .work .blocks {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .work .blocks .block {
+        width: 100%;
+    }
+
+    .description .desc {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .description .desc .desc-infa {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .description .desc img {
+        padding-top: 30px;
+        max-width: 100%;
+    }
+
+    .team .team-blocks {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .team .team-blocks .block {
+        padding: 25px 40px;
+    }
+
+    .loop .loop-block {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .loop .loop-block input {
+        width: 100%;
+        right: 0;
+        padding-right: 30px;
+    }
+
+    .loop .loop-block button {
+        right: 0;
+    }
+
+    .loop p,
+    .loop .loop-block p {
+        width: 100%;
+    }
+
+    /* страница Услуг */
+    .service .blocks {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .service .block:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid #fff;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .video {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .video .info h1,
+    .video .info p {
+        width: 100%;
+    }
+
+    .text-image,
+    .text-image2 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 0;
+    }
+
+    .text-image .infa h1,
+    .text-image .infa p,
+    .text-image2 .infa h1,
+    .text-image2 .infa p {
+        width: 100%;
+    }
+
+    .customer h1,
+    .customer .text1 {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .customer .peoples-blocks {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .customer .peoples-blocks .people-block p {
+        width: 100%;
+    }
+
+    /* страница Новостей */
+    .news {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .news-infa .infa-block h1,
+    .news-infa .infa-block p {
+        width: 100%;
+    }
+
+    .news-posts .posts-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .news-posts .posts-block .posts-block-text h2 {
+        width: 100%;
+    }
+
+    .lorem .lorem-text,
+    .lorem .lorem-blocks .lorem-blocks-text {
+        width: 100%;
+    }
+
+    .lorem .lorem-blocks {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .lorem .lorem-blocks input {
+        width: 100%;
+        right: 0;
+    }
+
+    .lorem .lorem-blocks button {
+        right: 0;
+    }
+
+    /* страница Контактов */
+    .contacts {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .contacts .block2,
+    .contacts .block3 {
+        border-left: none;
+        border-top: 1px solid #fff;
+        padding: 20px 0;
+    }
+
+    .feedback form {
+        width: 100%;
+    }
+
+    .feedback form .inline {
+        flex-direction: column;
+    }
+
+    .feedback form .inline > div {
+        width: 100%;
+    }
+
+    .feedback form input,
+    .feedback form textarea,
+    .feedback form .one-line {
+        width: 100%;
+    }
+
+    /* Футер */
+    .footer-block {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-block p {
+        width: 100%;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    header .logo {
+        font-size: 22px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li.active::after {
+        display: none;
+    }
+
+    .hero-info h1 {
+        font-size: 26px;
+    }
+
+    .hero-info h2 {
+        font-size: 16px;
+    }
+
+    .trending h3 {
+        font-size: 22px;
+    }
+
+    .big-text {
+        font-size: 20px;
+        padding: 30px 0;
+    }
+
+    .banner h3 {
+        font-size: 22px;
+    }
+
+    .features .info .block {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .projects .images img {
+        max-width: 100%;
+    }
+
+    .work .blocks .block {
+        padding: 30px 20px;
+    }
+
+    .team .team-blocks .block {
+        padding: 20px;
+    }
+
+    .team .team-blocks .block img {
+        max-width: 100px;
+    }
+
+    .reviews-nav {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .arrows {
+        margin-right: 0;
+    }
+
+    .search-block {
+        width: 100%;
+    }
+
+    .feedback form {
+        width: 100%;
+    }
+
+    .feedback form button {
+        float: none;
+        width: 100%;
+    }
 }
