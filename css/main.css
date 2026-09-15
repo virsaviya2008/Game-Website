@@ -179,7 +179,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
 /*секция с функциями */
 
 .features{
-    background: url('/img/backround.png') no-repeat center center fixed;
+    background: url('img/backround.png') no-repeat center center fixed;
     background-size: cover;
     padding: 80px 0;
 }
